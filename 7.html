@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <p id="d7"></p>
+    <p id="d8"></p>
+    <p id="d9"></p>
+    <p id="d10"></p>
+    <p id="d11"></p>
+    
+    <script>
+        let people=["Greg", "Mary", "Devon", "James"];
+        var text="";
+        people.forEach(printElement);
+        console.log("array iteration:");
+        function printElement(value)
+        {
+            text+=value+"<BR>";
+            console.log(value);
+        }
+        document.getElementById("d1").innerHTML = text;
+        people.splice(0,1);
+        document.getElementById("d2").innerHTML = people;
+        people.pop();
+        document.getElementById("d3").innerHTML = people;
+        people.unshift("Matt") 
+        document.getElementById("d4").innerHTML = people;
+        people.push("Boopathi")
+        document.getElementById("d5").innerHTML = people;
+        var len=people.length;
+        for(let i=0;i<len;i++)
+        {
+            text+=people[i]+"<BR>";
+            console.log(people[i]);
+            if(people[i]=="Mary")
+              break;
+        }
+        document.getElementById("d6").innerHTML = text;
+        arrCopy=people.slice(2);
+        document.getElementById("d7").innerHTML=arrCopy;
+        document.getElementById("d8").innerHTML="Index of Mary : "+people.indexOf("Mary");
+        document.getElementById("d9").innerHTML="Index of Foo  : "+people.indexOf("Foo");
+        people=["Greg", "Mary", "Devon", "James"]; 
+        people.splice(2,1,"Elizabeth","Artie","James");
+        document.getElementById("d10").innerHTML="updated array is:"+people;
+        var withBob=people.concat("Bob");
+        document.getElementById("d11").innerHTML="updated array is:"+withBob;
+    </script>
+</body>
+</html>

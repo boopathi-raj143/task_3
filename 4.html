@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <script>
+        var cabinetHold1=['duct tape','gum',3.14,false,6.0233e23];
+        var cabinetHold12=['orange drink','nref toys','camera',42,'parnsip'];
+        document.getElementById('d1').innerHTML='after concat:['+cabinetHold1.concat(cabinetHold12)+']';
+        document.getElementById('d2').innerHTML='slice operation on array 1: ['+cabinetHold1.splice(3)+']';
+        document.getElementById('d3').innerHTML='slice operation on array 2: ['+cabinetHold12.splice(3)+']';
+        document.getElementById('d4').innerHTML='reverse of array 1 is: ['+cabinetHold1.reverse()+']';
+        document.getElementById('d5').innerHTML='sort of array 2 is: ['+cabinetHold12.sort()+']';
+        
+
+    </script>
+</body>
+</html>

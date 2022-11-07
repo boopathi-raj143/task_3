@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <script>
+        var element1=['hydrogen','H',1.008];
+        var element2=['helium','He',4.003];
+        var element3=['iron','Fe',55.85];
+        var table=[];
+        table.push(element1);
+        table.push(element2);
+        table.push(element3);
+        document.getElementById("d1").innerHTML ="Table structure is : "+ table;
+        document.getElementById("d2").innerHTML ="Table[1] : "+table[1]; 
+        document.getElementById("d3").innerHTML ="Table[1][1] : "+table[1][1]; 
+        document.getElementById("d4").innerHTML =table[0][2]; 
+        document.getElementById("d5").innerHTML =table[1][0]; 
+        document.getElementById("d6").innerHTML =table[2][1]; 
+    </script>
+</body>
+</html>

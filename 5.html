@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <p id="d7"></p>
+    <p id="d8"></p>
+    <p id="d9"></p>
+    <script>
+        var str='In space, no one can hear your code';
+        document.getElementById('d1').innerHTML="split(): "+str.split();
+        document.getElementById('d2').innerHTML="split(e): "+str.split('e');
+        document.getElementById('d3').innerHTML="split( ): "+str.split('');
+        document.getElementById('d4').innerHTML="split(  ): "+str.split(' ');
+        var arr=['B','n','n',5];
+        document.getElementById('d5').innerHTML="join():"+arr.join();
+        document.getElementById('d6').innerHTML="join(a):"+arr.join('a');
+        document.getElementById('d7').innerHTML="join( ):"+arr.join(' ');
+        var str1="water,space suits,food,plasma sword,batteries"
+        const alphabets=str1.split('');
+        document.getElementById('d8').innerHTML = "ALPHABETS:"+alphabets;
+        var str2=alphabets.join('');
+        document.getElementById('d9').innerHTML ="new string"+str2; 
+    </script>
+</body>
+</html>
